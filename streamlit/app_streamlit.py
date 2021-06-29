@@ -31,7 +31,7 @@ def load_preprocessor():
 
 @st.cache
 def load_data():
-    df = pd.read_csv('aug_train.csv')
+    df = pd.read_csv('streamlit/aug_train.csv')
     return df
 
 def load_models(model_type=None):

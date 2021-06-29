@@ -42,7 +42,7 @@ def load_models(model_type=None):
         cat_model = load_model('streamlit/catboost')
         return cat_model
 
-@st.cache
+# @st.cache
 def prep_data():
     df = load_data()
     df_copy = df.copy()

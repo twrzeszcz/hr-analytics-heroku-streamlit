@@ -2,7 +2,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Sales prediction service</title>
+  <title>HR Analytics service</title>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
@@ -15,7 +15,7 @@
 
 <style>
 body {
-  background-image: url("https://images.pexels.com/photos/1591055/pexels-photo-1591055.jpeg?cs=srgb&dl=pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-1591055.jpg&fm=jpg");
+  background-image: url("https://images.pexels.com/photos/572056/pexels-photo-572056.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover
@@ -25,20 +25,22 @@ body {
 
 
  <div class="login">
-	<h1>Predict Sales</h1>
+	<h1>Predict job change</h1>
 
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="Item Identifier" placeholder="Item Identifier" required="required" />
-        <input type="text" name="Item Weight" placeholder="Item Weight" required="required" />
-		<input type="text" name="Item_Fat_Content" placeholder="Item_Fat_Content" required="required" />
-        <input type="text" name="Item_Visibility" placeholder="Item_Visibility" required="required" />
-        <input type="text" name="Item Type" placeholder="Item Type" required="required" />
-        <input type="text" name="Item MRP" placeholder="Item MRP" required="required" />
-        <input type="text" name="Outlet Identifier" placeholder="Outlet Identifier" required="required" />
-        <input type="text" name="Outlet_Establishment_Year" placeholder="Outlet_Establishment_Year" required="required" />
-        <input type="text" name="Outlet_Size" placeholder="Outlet_Size" required="required" />
-        <input type="text" name="Outlet_Location_Type" placeholder="Outlet_Location_Type" required="required" />
-        <input type="text" name="Outlet_Type" placeholder="Outlet_Type" required="required" />
+    	<input type="text" name="Enrollee Id" placeholder="Enrollee Id" required="required" />
+        <input type="text" name="City" placeholder="City" required="required" />
+		<input type="text" name="City development index" placeholder="City development index" required="required" />
+        <input type="text" name="Gender" placeholder="Gender" required="required" />
+        <input type="text" name="Relevant experience" placeholder="Relevant experience" required="required" />
+        <input type="text" name="Enrolled university" placeholder="Enrolled university" required="required" />
+        <input type="text" name="Education level" placeholder="Education level" required="required" />
+        <input type="text" name="Major discipline" placeholder="Major discipline" required="required" />
+        <input type="text" name="Experience" placeholder="Experience" required="required" />
+        <input type="text" name="Company size" placeholder="Company size" required="required" />
+        <input type="text" name="Company type" placeholder="Company type" required="required" />
+        <input type="text" name="Last new job" placeholder="Last new job" required="required" />
+        <input type="text" name="Training hours" placeholder="Training hours" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>

@@ -18,8 +18,8 @@ def main_section():
     background_im = cv2.imread('images/background.jpeg')
     st.image(cv2.cvtColor(background_im, cv2.COLOR_BGR2RGB), use_column_width=True)
     st.markdown('**Data Analysis** section contains some basic information about the train data and allows to perform EDA '
-                'with multiple visualization options. In the **Model Performance** section evaluation on the thest data is performed'
-                'and some metrics are shown. **Feature Importances** section contains calculated feature importances based on the SHAP values. '
+                'with multiple visualization options. In the **Model Performance** section evaluation on the test data is performed'
+                ' and some metrics are shown. **Feature Importances** section contains calculated feature importances based on the SHAP values. '
                 'Finally **Prediction Service** allows to make predictions on the user input.')
     del background_im
     gc.collect()

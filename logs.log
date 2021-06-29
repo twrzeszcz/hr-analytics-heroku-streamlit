@@ -1,0 +1,280 @@
+2021-06-29 00:11:58,557:INFO:Initializing load_model()
+2021-06-29 00:11:58,557:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 00:12:02,152:INFO:Initializing load_model()
+2021-06-29 00:12:02,152:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 00:13:41,704:INFO:Initializing load_model()
+2021-06-29 00:13:41,704:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 00:13:45,307:INFO:Initializing load_model()
+2021-06-29 00:13:45,307:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 00:15:34,313:INFO:Initializing load_model()
+2021-06-29 00:15:34,328:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 00:16:13,948:INFO:Initializing load_model()
+2021-06-29 00:16:13,948:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 00:17:43,428:INFO:Initializing load_model()
+2021-06-29 00:17:43,428:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 00:18:16,386:INFO:Initializing load_model()
+2021-06-29 00:18:16,386:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 00:18:43,687:INFO:Initializing predict_model()
+2021-06-29 00:18:43,687:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='target')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    targ...
+                                                                            min_impurity_decrease=0.0001,
+                                                                            min_samples_split=5,
+                                                                            n_estimators=200,
+                                                                            random_state=4000,
+                                                                            subsample=0.4))],
+                                    final_estimator=LGBMClassifier(bagging_fraction=0.9090111611677784,
+                                                                   bagging_freq=4,
+                                                                   feature_fraction=0.6225207643958737,
+                                                                   learning_rate=0.001,
+                                                                   min_child_weight=1e-09,
+                                                                   n_estimators=383,
+                                                                   num_leaves=42,
+                                                                   random_state=4000,
+                                                                   reg_alpha=1.0,
+                                                                   reg_lambda=0.1),
+                                    n_jobs=-1, passthrough=True)]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2021-06-29 00:18:43,687:INFO:Checking exceptions
+2021-06-29 00:18:43,687:INFO:Preloading libraries
+2021-06-29 00:44:36,497:INFO:Initializing load_model()
+2021-06-29 00:44:36,497:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 00:44:40,108:INFO:Initializing load_model()
+2021-06-29 00:44:40,108:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 00:46:24,992:INFO:Initializing predict_model()
+2021-06-29 00:46:24,992:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='target')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    targ...
+                                                                            min_impurity_decrease=0.0001,
+                                                                            min_samples_split=5,
+                                                                            n_estimators=200,
+                                                                            random_state=4000,
+                                                                            subsample=0.4))],
+                                    final_estimator=LGBMClassifier(bagging_fraction=0.9090111611677784,
+                                                                   bagging_freq=4,
+                                                                   feature_fraction=0.6225207643958737,
+                                                                   learning_rate=0.001,
+                                                                   min_child_weight=1e-09,
+                                                                   n_estimators=383,
+                                                                   num_leaves=42,
+                                                                   random_state=4000,
+                                                                   reg_alpha=1.0,
+                                                                   reg_lambda=0.1),
+                                    n_jobs=-1, passthrough=True)]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2021-06-29 00:46:24,992:INFO:Checking exceptions
+2021-06-29 00:46:24,992:INFO:Preloading libraries
+2021-06-29 00:46:29,669:INFO:Initializing load_model()
+2021-06-29 00:46:29,669:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 00:47:39,581:INFO:Initializing load_model()
+2021-06-29 00:47:39,581:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 00:47:43,207:INFO:Initializing load_model()
+2021-06-29 00:47:43,207:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 00:48:01,973:INFO:Initializing predict_model()
+2021-06-29 00:48:01,973:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='target')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    targ...
+                                                                            min_impurity_decrease=0.0001,
+                                                                            min_samples_split=5,
+                                                                            n_estimators=200,
+                                                                            random_state=4000,
+                                                                            subsample=0.4))],
+                                    final_estimator=LGBMClassifier(bagging_fraction=0.9090111611677784,
+                                                                   bagging_freq=4,
+                                                                   feature_fraction=0.6225207643958737,
+                                                                   learning_rate=0.001,
+                                                                   min_child_weight=1e-09,
+                                                                   n_estimators=383,
+                                                                   num_leaves=42,
+                                                                   random_state=4000,
+                                                                   reg_alpha=1.0,
+                                                                   reg_lambda=0.1),
+                                    n_jobs=-1, passthrough=True)]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2021-06-29 00:48:01,973:INFO:Checking exceptions
+2021-06-29 00:48:01,974:INFO:Preloading libraries
+2021-06-29 00:48:29,432:INFO:Initializing predict_model()
+2021-06-29 00:48:29,432:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='target')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    targ...
+                                                                            min_impurity_decrease=0.0001,
+                                                                            min_samples_split=5,
+                                                                            n_estimators=200,
+                                                                            random_state=4000,
+                                                                            subsample=0.4))],
+                                    final_estimator=LGBMClassifier(bagging_fraction=0.9090111611677784,
+                                                                   bagging_freq=4,
+                                                                   feature_fraction=0.6225207643958737,
+                                                                   learning_rate=0.001,
+                                                                   min_child_weight=1e-09,
+                                                                   n_estimators=383,
+                                                                   num_leaves=42,
+                                                                   random_state=4000,
+                                                                   reg_alpha=1.0,
+                                                                   reg_lambda=0.1),
+                                    n_jobs=-1, passthrough=True)]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2021-06-29 00:48:29,432:INFO:Checking exceptions
+2021-06-29 00:48:29,432:INFO:Preloading libraries
+2021-06-29 08:12:36,492:INFO:Initializing load_model()
+2021-06-29 08:12:36,492:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 08:12:40,270:INFO:Initializing load_model()
+2021-06-29 08:12:40,270:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 08:13:11,120:INFO:Initializing load_model()
+2021-06-29 08:13:11,120:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 08:13:31,587:INFO:Initializing load_model()
+2021-06-29 08:13:31,587:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 08:13:37,429:INFO:Initializing load_model()
+2021-06-29 08:13:37,429:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 08:15:14,454:INFO:Initializing load_model()
+2021-06-29 08:15:14,454:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 08:15:51,481:INFO:Initializing load_model()
+2021-06-29 08:15:51,481:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 08:16:29,387:INFO:Initializing load_model()
+2021-06-29 08:16:29,387:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 08:17:02,984:INFO:Initializing load_model()
+2021-06-29 08:17:02,984:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 08:17:27,486:INFO:Initializing load_model()
+2021-06-29 08:17:27,486:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 08:18:51,317:INFO:Initializing load_model()
+2021-06-29 08:18:51,317:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 08:19:21,783:INFO:Initializing load_model()
+2021-06-29 08:19:21,783:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 08:20:02,168:INFO:Initializing load_model()
+2021-06-29 08:20:02,168:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 08:20:10,623:INFO:Initializing predict_model()
+2021-06-29 08:20:10,624:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='target')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    targ...
+                                                                            min_impurity_decrease=0.0001,
+                                                                            min_samples_split=5,
+                                                                            n_estimators=200,
+                                                                            random_state=4000,
+                                                                            subsample=0.4))],
+                                    final_estimator=LGBMClassifier(bagging_fraction=0.9090111611677784,
+                                                                   bagging_freq=4,
+                                                                   feature_fraction=0.6225207643958737,
+                                                                   learning_rate=0.001,
+                                                                   min_child_weight=1e-09,
+                                                                   n_estimators=383,
+                                                                   num_leaves=42,
+                                                                   random_state=4000,
+                                                                   reg_alpha=1.0,
+                                                                   reg_lambda=0.1),
+                                    n_jobs=-1, passthrough=True)]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2021-06-29 08:20:10,624:INFO:Checking exceptions
+2021-06-29 08:20:10,624:INFO:Preloading libraries
+2021-06-29 08:20:14,358:INFO:Initializing load_model()
+2021-06-29 08:20:14,358:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 08:20:37,456:INFO:Initializing predict_model()
+2021-06-29 08:20:37,456:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='target')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    targ...
+                                                                            min_impurity_decrease=0.0001,
+                                                                            min_samples_split=5,
+                                                                            n_estimators=200,
+                                                                            random_state=4000,
+                                                                            subsample=0.4))],
+                                    final_estimator=LGBMClassifier(bagging_fraction=0.9090111611677784,
+                                                                   bagging_freq=4,
+                                                                   feature_fraction=0.6225207643958737,
+                                                                   learning_rate=0.001,
+                                                                   min_child_weight=1e-09,
+                                                                   n_estimators=383,
+                                                                   num_leaves=42,
+                                                                   random_state=4000,
+                                                                   reg_alpha=1.0,
+                                                                   reg_lambda=0.1),
+                                    n_jobs=-1, passthrough=True)]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2021-06-29 08:20:37,456:INFO:Checking exceptions
+2021-06-29 08:20:37,456:INFO:Preloading libraries
+2021-06-29 08:20:42,244:INFO:Initializing load_model()
+2021-06-29 08:20:42,244:INFO:load_model(model_name=stacking_clf, platform=None, authentication=None, verbose=True)
+2021-06-29 08:21:41,583:INFO:Initializing predict_model()
+2021-06-29 08:21:41,583:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='target')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    targ...
+                                                                            min_impurity_decrease=0.0001,
+                                                                            min_samples_split=5,
+                                                                            n_estimators=200,
+                                                                            random_state=4000,
+                                                                            subsample=0.4))],
+                                    final_estimator=LGBMClassifier(bagging_fraction=0.9090111611677784,
+                                                                   bagging_freq=4,
+                                                                   feature_fraction=0.6225207643958737,
+                                                                   learning_rate=0.001,
+                                                                   min_child_weight=1e-09,
+                                                                   n_estimators=383,
+                                                                   num_leaves=42,
+                                                                   random_state=4000,
+                                                                   reg_alpha=1.0,
+                                                                   reg_lambda=0.1),
+                                    n_jobs=-1, passthrough=True)]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2021-06-29 08:21:41,583:INFO:Checking exceptions
+2021-06-29 08:21:41,583:INFO:Preloading libraries

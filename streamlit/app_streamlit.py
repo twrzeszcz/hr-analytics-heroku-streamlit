@@ -15,7 +15,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 
 def main_section():
     st.title('HR Analytics Project')
-    background_im = cv2.imread('images/background.jpeg')
+    background_im = cv2.imread('streamlit/images/background.jpeg')
     st.image(cv2.cvtColor(background_im, cv2.COLOR_BGR2RGB), use_column_width=True)
     st.markdown('**Data Analysis** section contains some basic information about the train data and allows to perform EDA '
                 'with multiple visualization options. In the **Model Performance** section evaluation on the test data is performed'

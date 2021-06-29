@@ -8,7 +8,7 @@ from utils import custom_transformer, skewness_remover
 
 app = Flask(__name__)
 prep_pipe = pickle.load(open('prep_pipe.pkl', 'rb'))
-stacking_model = stacking_model = load_model('stacking_clf')
+stacking_model = load_model('stacking_clf')
 col_names = ['enrollee_id', 'city', 'city_development_index', 'gender',
        'relevent_experience', 'enrolled_university', 'education_level',
        'major_discipline', 'experience', 'company_size',

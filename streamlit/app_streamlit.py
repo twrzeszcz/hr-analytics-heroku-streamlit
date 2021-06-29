@@ -39,7 +39,7 @@ def load_models(model_type=None):
         stacking_model = load_model('stacking_clf')
         return stacking_model
     else:
-        cat_model = load_model('catboost')
+        cat_model = load_model('streamlit/catboost')
         return cat_model
 
 @st.cache

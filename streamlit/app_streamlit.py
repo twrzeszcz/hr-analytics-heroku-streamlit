@@ -34,36 +34,11 @@ def load_data():
     df = pd.read_csv('streamlit/aug_train.csv')
     return df
 
-def load_models(model_type=None):
-    if model_type == 'inference':
-        stacking_model = load_model('stacking_clf')
-        return stacking_model
-    else:
-        cat_model = load_model('streamlit/catboost')
-        return cat_model
+def load_models():
+    stacking_model = load_model('stacking_clf')
+    return stacking_model
 
-# @st.cache
-def prep_data():
-    df = load_data()
-    df_copy = df.copy()
-    df_copy.drop_duplicates(subset=df_copy.columns[1:], inplace=True)
-    prep_pipe = load_preprocessor()
-    to_transform = df_copy.drop('target', axis=1)
-    df_caret = prep_pipe.transform(to_transform)
-    df_caret['target'] = df_copy['target'].copy()
 
-    setup(data=df_caret, target='target',
-                train_size=0.85,
-                normalize=True,
-                fold=5,
-                data_split_stratify=True,
-                fix_imbalance=True,
-                remove_multicollinearity=True,
-                session_id=4000,
-                silent=True,
-                html=False)
-
-    return df_copy, df_caret, df, to_transform
 
 def data_analysis():
     st.title('Data Analysis')
@@ -140,44 +115,14 @@ def data_analysis():
 
 def model_performance():
     st.title('Model Performance')
-
-    _1, _2, _3, _4 = prep_data()
-
-    stacking_model = load_models(model_type='inference')
-    plot_model(stacking_model.get_params()['trained_model'],
-               'auc',
-               display_format='streamlit')
-    plot_model(stacking_model.get_params()['trained_model'],
-               'confusion_matrix',
-               display_format='streamlit')
-    plot_model(stacking_model.get_params()['trained_model'],
-               'class_report',
-               display_format='streamlit')
-    plot_model(stacking_model.get_params()['trained_model'],
-               'error',
-               display_format='streamlit')
-
-    del _1, _2, _3, _4, stacking_model
-
+    st.image(cv2.cvtColor(cv2.imread('streamlit/images/AUC.png'), cv2.COLOR_BGR2RGB), use_column_width=True)
+    st.image(cv2.cvtColor(cv2.imread('streamlit/images/conf_matrix.png'), cv2.COLOR_BGR2RGB), use_column_width=True)
+    st.image(cv2.cvtColor(cv2.imread('streamlit/images/class_report.png'), cv2.COLOR_BGR2RGB), use_column_width=True)
+    st.image(cv2.cvtColor(cv2.imread('streamlit/images/error.png'), cv2.COLOR_BGR2RGB), use_column_width=True)
 
 def feature_importances():
     st.title('Feature Importances')
-
-    _1, _2, _3, _4 = prep_data()
-    cat_model = load_models()
-    if st.sidebar.checkbox('Display feature importances'):
-        interpret_model(cat_model.get_params()['trained_model'])
-        st.pyplot()
-    if st.sidebar.checkbox('Display SHAP values for a feature'):
-        feature_name = st.text_input('Select feature from the general plot')
-        interpret_model(cat_model.get_params()['trained_model'],
-                        plot='correlation',
-                        feature=feature_name)
-        st.pyplot()
-
-    del _1, _2, _3, _4
-
-
+    st.image(cv2.cvtColor(cv2.imread('streamlit/images/SHAP.png'), cv2.COLOR_BGR2RGB), use_column_width=True)
 def prediction_service():
     df = load_data()
     features = []
@@ -196,7 +141,7 @@ def prediction_service():
     features.append(float(st.text_input('Training hours', 0)))
     if st.sidebar.button('Predict'):
         df_test = pd.DataFrame([features], columns=df.columns[:-1])
-        stacking_model = load_models(model_type='inference')
+        stacking_model = load_models()
         prep_pipe = load_preprocessor()
         df_test_prep = prep_pipe.transform(df_test)
         st.info('Predicted class: {}'.format(predict_model(stacking_model, data=df_test_prep)['Label'].values[0]))
